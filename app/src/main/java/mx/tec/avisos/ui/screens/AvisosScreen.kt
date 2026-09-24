@@ -63,6 +63,7 @@ fun AvisosScreen(
             )
         },
         floatingActionButton = {
+
             FloatingActionButton(onClick = onPublicar) {
                 Icon(Icons.Default.Add, contentDescription = "Publicar aviso")
             }

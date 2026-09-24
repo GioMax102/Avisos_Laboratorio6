@@ -27,5 +27,6 @@ data class Sesion(
     val refreshToken: String,
     val expiraEn: Long
 ) {
+    /** La regla de autorización, vista desde el cliente. El servidor la repite. */
     fun segundosRestantes(ahora: Long = System.currentTimeMillis() / 1000): Long = expiraEn - ahora
 }
